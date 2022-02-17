@@ -50,7 +50,7 @@ ul.header__navigation-list li a {
 }
 
 .header__text-container p {
-    font-weight: 13px;
+    font-weight: bold;
 }
 
 .header__button {
