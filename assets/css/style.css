@@ -1,73 +1,268 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*{
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.color-silver {
+    color: #999999!important;
+}
+
+.color-black {
+    color: #000!important;
+}
+
+.color-green {
+    color:#5AB963;
+}
 
 body {
     font-family: 'Libre Franklin', sans-serif;
-    margin: 0;
 }
-        /*первая страница*/
-.header {
-    background-image: url(img/IMAGE\ \(1\).png);
+        /*header*/
+.background_wallpaper {
+    background-image: url(img/IMAGE.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 582px;
     width: 1440px;
 }
 
-.navigation-panel {
+.header__menu {
+    width: 1170px;
+    height: 90px;
     display: flex;
     flex-direction: row;
-}
-
-a img {
-    padding-top: 30px;
     padding-left: 135px;
+    padding-right: 135px;
 }
 
-ul {
+.logo {
+    padding-top: 30px;
+    width: 125.6px;
+}
+
+.header__navigation-panel {
+    padding-top: 33px;
+    padding-left: 420px;
+    width: 1044.4px;
+}
+
+ul.header__navigation-list {
     display: flex;
-    list-style: none;
-    margin-top: 33px;
-    margin-left: 420px;
 }
 
-ul li a {
+ul.header__navigation-list li {
     text-decoration: none;
     text-transform: capitalize;
-    color:rgb(255, 255, 255);
-    padding-right: 40px;
+    color: #FFFFFF;
+    margin-left: 40px;
+    white-space: nowrap;
 }
 
-.text {
+ul.header__navigation-list li a {
+    text-decoration: none;
+    color:#FFFFFF;
+    padding: 5px;
+}
+
+.header__central-container {
     text-align: center;
     color: #FFFFFF;
+    padding-top: 115px;
+    margin: auto;
+    width: 726px;
 }
 
-.text h1 {
-    margin-top: 148px;
-    margin-bottom: 35px;
+.header__text-container h1 {
     font-weight: bold;
     font-size: 71px;
+    white-space: nowrap;
+    height: 78px;
 }
 
-.text p {
-    font-weight: 13px;
+.header__text-container p {
+    font-weight: bold;
+    width: 536px;
+    height: 24px;
+    padding-left: 115px;
+    padding-top: 35px;
+    font-size: 13px;
+    width: 536px;
 }
 
 .start-button {
-    margin-top: 60px;
-    margin-left: 670px;
+    margin: 60px auto 120px auto;
     background-color: #5AB963;
     border-radius: 4px;
-    width: 160px;
-}
-
-.start-button a {
     display: block;
     text-align: center;
     font-size: 16px;
-    color:rgb(255, 255, 255);
+    color: #FFFFFF;
     text-decoration: none;
-    padding: 15px 30px 15px 30px;
+    padding: 15px 40px;
+    width: 160px;
 }
 
-/*вторая часть*/
+/*main*/
+
+.section__1 {
+    width: 1440px;
+    height: 1154px;
+}
+
+.inner-container {
+    width: 1170px;
+    margin: auto;
+}
+
+.section__1_container_1 {
+    padding-top: 120px;
+    display: flex;
+}
+
+.section__1_text_1 {
+    padding-left: 100px;
+}
+
+.section__1_text h1 {
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    width: 365px;
+} 
+
+.section__1_text p {
+    padding-top: 25px;
+    font-size: 13px;
+    line-height: 24px;
+    color: #999999;
+    width: 360px;
+}
+
+.section__1_container_2 {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 93px;
+    height: 452px;
+}
+
+.section__1_text_2 {
+    padding-right: 100px;
+}
+
+.section__1_container_3 {
+    margin: 110px;
+    margin-left: 548px;
+    width: 344px;
+}
+
+.section__1_container_3 h1 {
+    font-size: 16px;
+}
+
+.section__1_container_3 p {
+    padding-top: 12px;
+    padding-left: 60px;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+/*footer*/
+
+.footer__page {
+    background-image: url(img/Rectangle.png);
+    background-repeat: no-repeat;
+    height: 399px;
+    width: 1440px;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-areas: 
+        "logo col1 col2 col3";
+    padding: 120px 135px 150px 135px;
+}
+
+.footer__container p {
+    color: #666666;
+    padding-top: 15px;
+    padding-right: 350px;
+}
+
+.footer__nav {
+    display: grid;
+    grid-template-areas: 
+        "col1 col2 col3";
+}
+
+ul.footer__navigation-list {
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+ul.footer__navigation-list li {
+    padding-top: 25px;
+    padding-left: 50px;
+}
+
+ul.footer__navigation-list li:first-child {
+    padding-top: 0px;
+}
+
+ul.footer__navigation-list a {
+    color:#FFFFFF;
+    text-decoration: none;
+}
